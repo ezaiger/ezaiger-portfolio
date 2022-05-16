@@ -6,17 +6,19 @@
 }
 
 * {
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
    margin: 0;
+   box-sizing: border-box;
 }
 
 body {
     background-color: var(--background-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* header styles */
 header {
-    background-color:#335C67;
+    background-color: var(--tertiary-color);
     display: flex;
     padding-left: 15px;
     color: white;
@@ -34,7 +36,7 @@ header a {
     font-weight: bold;
 }
 
-header nav {
+nav {
     display: flex;
     width: 50%;
     padding: 15px;
@@ -96,4 +98,24 @@ header nav {
 
 .work {
     display: flex;
+    margin-top: 25px;
+}
+
+.work h2 {
+    width: 15%;
+    padding-left: 15px;
+}
+
+.work div {
+    width: 85%;
+}
+
+.contact {
+    display: flex;
+    margin-top: 1000px;
+}
+
+.contact h2 {
+    width: 100%;
+    padding-left: 15px;
 }
