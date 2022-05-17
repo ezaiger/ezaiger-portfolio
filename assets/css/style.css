@@ -30,10 +30,14 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color:var(--secondary-color);
+    color:white;
     margin-right: 15px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+header a:hover {
+    color:#540B0E;
 }
 
 nav {
@@ -110,9 +114,13 @@ nav {
     width: 85%;
 }
 
+.work img {
+    width: 100%;
+}
+
 .contact {
     display: flex;
-    margin-top: 1000px;
+    margin-top: 25px;
 }
 
 .contact h2 {
