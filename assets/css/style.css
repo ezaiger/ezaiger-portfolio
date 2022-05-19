@@ -143,4 +143,16 @@ nav a:hover {
 .contact h2 {
     width: 100%;
     padding-left: 15px;
+    width: 15%;
+    padding-right: 15px;
+    border-right-color: #540B0E;
+    border-right-width: 3px;
+    border-right-style: solid;
+    text-align:right;
+}
+
+.contact address {
+    margin-left: 15px;
+    justify-content: flex-end;
+    align-items: center;
 }
