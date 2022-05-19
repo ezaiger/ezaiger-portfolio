@@ -6,14 +6,24 @@
 }
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--background-color);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 /* header styles */
@@ -28,18 +38,6 @@ header h1 {
     width: 50%;
 }
 
-header a {
-    text-decoration: none;
-    color:white;
-    margin-right: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-header a:hover {
-    color:#540B0E;
-}
-
 nav {
     display: flex;
     width: 50%;
@@ -48,9 +46,22 @@ nav {
     align-items: center;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color:#540B0E;
+}
+
 /* hero styles */
 .hero {
-   position: relative; 
+    display: flex;
+    position: relative;
 }
 
 .hero img {
@@ -58,23 +69,22 @@ nav {
     height: 15vh;
     position: absolute;
     z-index: 1;
+    float:right;
 }
 
 .hero div {
     position: absolute;
     color: black;
     z-index: 2;
-    left: 82%;
-    top: 100px;
-}
-
-.hero img {
-    float: right;
+    left: 85%;
+    top: 90px;
+    padding-bottom: 25px;
 }
 
 .about-me {
     margin-top: 160px;
     display: flex;
+    
 }
 
 .about-me h2 {
@@ -83,6 +93,8 @@ nav {
     border-right-color: #540B0E;
     border-right-width: 3px;
     border-right-style: solid;
+    text-align: right;
+    padding-right: 15px;
 }
 
 .about-me div {
@@ -107,7 +119,12 @@ nav {
 
 .work h2 {
     width: 15%;
-    padding-left: 15px;
+    padding-left: 100px;
+    padding-right: 25px;
+    border-right-color: #540B0E;
+    border-right-width: 3px;
+    border-right-style: solid;
+    text-align:right;
 }
 
 .work div {
