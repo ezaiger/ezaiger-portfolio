@@ -130,13 +130,58 @@ nav a:hover {
     padding-right: 15px;
 }
 
-/* work section styles
-.flex-container {
-    width: 80%;
+/* work section styles */
+.flex-item img {
+    width: 100%;
 }
 
+.container {
+    display: grid;
+    width: 85%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6fr 3fr 3fr 1fr;
+    grid-template-areas:
+        "horiseon horiseon"
+        "pw-generator code-quiz"
+        "work-scheduler weather-dashboard"
+        "camp-firecast camp-firecast";
+    grid-gap: 0.8rem;
+}
 
-#work {
+#horiseon {
+    grid-area: horiseon;
+    background-color:#335C67;
+}
+
+#pw-generator {
+    grid-area: pw-generator;
+    background-color:#540B0E;
+}
+
+#code-quiz {
+    grid-area: code-quiz;
+    background-color:#911a1e;
+}
+
+#work-scheduler {
+    grid-area: work-scheduler;
+    background-color:#911a1e;
+}
+
+#weather-dashboard {
+    grid-area: weather-dashboard;
+    background-color:#540B0E;
+}
+
+#camp-firecast {
+    grid-area: camp-firecast;
+    background-color:#540B0E;
+}
+
+/* #work {
     margin-top: 25px;
 }
 
@@ -166,7 +211,7 @@ nav a:hover {
 
 .column {
     flex-direction: row;
-}
+} */
 
 /* contact section styles */
 /* #contact {
@@ -181,3 +226,22 @@ nav a:hover {
 } */
 
 /* media queries */
+/* tablet size */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* mobile phone size */
+@media only screen and (max-width: 320px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "horiseon"
+        "pw-generator" 
+        "code-quiz"
+        "work-scheduler" 
+        "weather-dashboard"
+        "camp-firecast";
+    }
+}
