@@ -1,15 +1,15 @@
 /* general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: black;
     --secondary-color: #540B0E;
     --tertiary-color: #335C67;
     --background-color: #f3f1e8;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -44,7 +44,7 @@ p {
 
 /* header styles */
 header {
-    background-color: var(--tertiary-color);
+    background: linear-gradient(#284952, #548a99);
     padding: 15px 0 15px 0;
     display: flex;
     flex-wrap: wrap;
@@ -85,8 +85,8 @@ nav a:hover {
 
 .hero img {
     width: 100%;
-    height: 16vh;
-    position: absolute;
+    display: flex;
+    position: relative;
     z-index: 1;
     float:right;
 }
@@ -99,19 +99,16 @@ nav a:hover {
     text-shadow:3px 3px 3px #540B0E;
     z-index: 2;
     left: 50%;
-    top: 100px;
+    bottom: 8px;
+    right: 16px;
     width: 48%;
     text-align: right;
 }
 
 /* about me section styles */
-#about-me {
-    display: flex;
-    margin-top: 160px;
-}
-
 #about-me p {
     margin-bottom: 5px;
+    margin-right: 15px;
 }
 
 .bio {
@@ -132,6 +129,7 @@ nav a:hover {
 
 /* work section styles */
 .flex-item img {
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 
@@ -141,77 +139,93 @@ nav a:hover {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6fr 3fr 3fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
         "horiseon horiseon"
         "pw-generator code-quiz"
         "work-scheduler weather-dashboard"
-        "camp-firecast camp-firecast";
+        "camp-firecast placeholder";
     grid-gap: 0.8rem;
 }
 
 #horiseon {
     grid-area: horiseon;
-    background-color:#335C67;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
+}
+
+#horiseon img {
+    width: 100%;
+    height: auto;
 }
 
 #pw-generator {
     grid-area: pw-generator;
-    background-color:#540B0E;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
+}
+
+#pw-generator img {
+    width: 100%;
 }
 
 #code-quiz {
     grid-area: code-quiz;
-    background-color:#911a1e;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
+}
+
+#code-quiz img {
+    width: 100%;
 }
 
 #work-scheduler {
     grid-area: work-scheduler;
-    background-color:#911a1e;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
+}
+
+#work-scheduler img {
+    width: 100%;
 }
 
 #weather-dashboard {
     grid-area: weather-dashboard;
-    background-color:#540B0E;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
+}
+
+#weather-dashboard img {
+    width: 100%;
 }
 
 #camp-firecast {
     grid-area: camp-firecast;
-    background-color:#540B0E;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
 }
 
-/* #work {
-    margin-top: 25px;
-}
-
-
-#work div {
-    width: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-#work img {
-    display: flex;
+#camp-firecast img {
     width: 100%;
 }
 
-.flex-container {
-    flex-direction: row;
+#placeholder {
+    grid-area: placeholder;
+    background: linear-gradient(#540B0E, #290304, black);
+    color: #f3f1e8;
+    padding: 15px 15px 15px 15px;
 }
 
-.row-one {
-    width: auto;
+#placeholder img {
+    width: 100%;
 }
-
-.row-one .row-two {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: row;
-} */
 
 /* contact section styles */
 /* #contact {
