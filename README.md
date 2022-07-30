@@ -14,3 +14,5 @@ To show potential employers samples of my work and assess whether I'm a good can
 ## Contribution
 * Code produced by EZaiger
 * Assistance by tutor Phil L.
+
+![alt text](./assets/images/portfolio.png "Screenshot of completed webpage")
